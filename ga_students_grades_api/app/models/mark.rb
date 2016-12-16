@@ -2,7 +2,8 @@ class Mark < ApplicationRecord
   belongs_to :user
   belongs_to :grade
   validates :comment, presence: true, length: { minimum: 0, maximum: 142 }, allow_blank: false
-  # validates :classwork_achievement, presence: true, format: /^[A-E\d\s][I]*$/
+
+  validates :classwork_achievement, presence: true, format: /[ABCDEI]/, length: { minimum: 1, maximum: 1 }
   # validates :homework_achievement, presence: true, format: /^[A-E\d\s][I]*$/
   # validates :classwork_effort, presence: true, format: /[1-5]/
   # validates :homework_effort, presence: true, format: /[1-5]/

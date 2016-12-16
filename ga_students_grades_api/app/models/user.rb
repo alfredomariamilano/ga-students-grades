@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  ROLES  = ['instructor', 'student', 'producer']
+  ROLES  = ['admin', 'instructor', 'student', 'producer']
 
   has_and_belongs_to_many :cohorts
 
