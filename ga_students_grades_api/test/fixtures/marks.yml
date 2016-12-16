@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  grade: one
+  classwork_effort: 1
+  classwork_achievement: MyString
+  homework_effort: 1
+  homework_achievement: MyString
+  comment: MyString
+
+two:
+  user: two
+  grade: two
+  classwork_effort: 1
+  classwork_achievement: MyString
+  homework_effort: 1
+  homework_achievement: MyString
+  comment: MyString
