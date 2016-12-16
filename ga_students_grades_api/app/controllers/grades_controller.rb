@@ -19,7 +19,7 @@ class GradesController < ApplicationController
     current_user.id = 1
     @grade = Grade.new(grade_params)
     @grade.user_id = current_user.id
-    if @grade.save && User.find(current_user.id).role === 'student'
+    if @grade.save
       render json: @grade, status: :created, location: @grade
     else
       render json: @grade.errors, status: :unprocessable_entity
