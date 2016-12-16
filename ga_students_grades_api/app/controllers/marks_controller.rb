@@ -16,8 +16,8 @@ class MarksController < ApplicationController
   # POST /marks
   def create
     @mark = Mark.new(mark_params)
-
-    if @mark.save
+    @mark.user_id = current_user.id
+    if @mark.save && User.find(current_user.id).role === 'instructor'
       render json: @mark, status: :created, location: @mark
     else
       render json: @mark.errors, status: :unprocessable_entity
@@ -39,13 +39,13 @@ class MarksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_mark
-      @mark = Mark.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_mark
+    @mark = Mark.find(params[:id])
+  end
 
-    # Only allow a trusted parameter "white list" through.
-    def mark_params
-      params.require(:mark).permit(:user_id, :grade_id, :classwork_effort, :classwork_achievement, :homework_effort, :homework_achievement, :comment)
-    end
+  # Only allow a trusted parameter "white list" through.
+  def mark_params
+    params.require(:mark).permit(:user_id, :grade_id, :classwork_effort, :classwork_achievement, :homework_effort, :homework_achievement, :comment)
+  end
 end

@@ -16,7 +16,7 @@ class GradesController < ApplicationController
   # POST /grades
   def create
     @grade = Grade.new(grade_params)
-
+    
     if @grade.save
       render json: @grade, status: :created, location: @grade
     else
