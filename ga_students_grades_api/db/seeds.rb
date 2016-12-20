@@ -5,5 +5,8 @@ s1 = User.create!(first_name: 'Random', last_name: 'Child', email: 'random@rando
 
 c1 = Cohort.create!(name: 'WDI22', start_date: Time.now, end_date: Time.now + (60*60*24*60))
 
+g1 = Grade.create!(week: 1, week_start: Time.now, user_id: 2)
+
 c1.users << i1
 c1.users << s1
+c1.grades << g1

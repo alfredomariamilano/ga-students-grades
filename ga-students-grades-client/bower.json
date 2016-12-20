@@ -1,0 +1,24 @@
+{
+  "name": "ga-students-grades",
+  "description": "An app for students, instructors and producers to check the progress of individuals during their time in GA.",
+  "main": "index.js",
+  "authors": [
+    "Alfredo Maria Milano and Johnnie De La Moriniere"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/alfredomariamilano/ga-students-grades",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "~0.3.1",
+    "angular-resource": "1.5.8",
+    "angular-jwt": "^0.0.9",
+    "jquery": "^3.1.1"
+  }
+}
