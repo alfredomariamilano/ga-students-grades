@@ -7,7 +7,7 @@ class CreateMarks < ActiveRecord::Migration[5.0]
       t.string :classwork_achievement
       t.integer :homework_effort
       t.string :homework_achievement
-      t.string :comment
+      t.text :comment
 
       t.timestamps
     end
