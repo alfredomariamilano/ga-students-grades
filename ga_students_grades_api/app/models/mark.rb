@@ -1,5 +1,5 @@
 class Mark < ApplicationRecord
-  belongs_to :user
+  belongs_to :instructor
   belongs_to :grade
   validates :comment, presence: true, length: { minimum: 0, maximum: 140 }, allow_blank: false
 
