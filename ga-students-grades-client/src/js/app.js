@@ -1,3 +1,5 @@
+console.log('blooop');
+
 angular
 .module('gaGradesApp', [
   'ui.router',
