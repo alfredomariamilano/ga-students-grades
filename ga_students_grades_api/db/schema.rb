@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20161216115904) do
     t.string   "classwork_achievement"
     t.integer  "homework_effort"
     t.string   "homework_achievement"
-    t.string   "comment"
+    t.text     "comment"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
     t.index ["grade_id"], name: "index_marks_on_grade_id", using: :btree
