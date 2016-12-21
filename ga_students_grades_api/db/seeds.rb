@@ -15,4 +15,3 @@ m3 = Mark.create!(user_id: 4, grade_id: 1, classwork_effort: 2, classwork_achiev
 
 c1.users << i1
 c1.users << s1
-c1.grades << g1
