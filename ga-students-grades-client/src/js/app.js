@@ -4,7 +4,8 @@ angular
 .module('gaGradesApp', [
   'ui.router',
   'ngResource',
-  'angular-jwt'
+  'angular-jwt',
+  'ng-token-auth'
 ]);
 
 var user = {
@@ -17,12 +18,19 @@ $.ajax({
   method: 'POST',
   data: user
 }).done(data => {
-  console.log(data);
+  console.log('login', data);
 });
 
 $.ajax({
   url: 'http://localhost:3000/users',
   method: 'GET'
 }).done(data => {
-  console.log(data);
+  console.log('users index', data);
+});
+
+$.ajax({
+  url: 'http://localhost:3000/users/1',
+  method: 'GET'
+}).done(data => {
+  console.log('users show', data);
 });
