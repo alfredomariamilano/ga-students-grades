@@ -1,5 +1,6 @@
 class MarksController < ApplicationController
   before_action :set_mark, only: [:show, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /marks
   def index
