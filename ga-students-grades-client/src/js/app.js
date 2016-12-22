@@ -1,14 +1,10 @@
-const app = (function() {
-  'use strict';
+const dependencies = [
+  'ui.router',
+  'ngResource',
+  'angular-jwt',
+  'ng-token-auth'
+];
+console.log('LOADED');
+angular.module('gaGradesApp', dependencies);
 
-  const dependencies = [
-    'ui.router',
-    'ngResource',
-    'angular-jwt',
-    'ng-token-auth'
-  ];
-  return angular.module('gaGradesApp', dependencies);
-
-})();
-
-console.log('hello there');
+console.log('hello something 2');

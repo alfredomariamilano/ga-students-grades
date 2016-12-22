@@ -1,0 +1,16 @@
+<h1 ui-sref="usersShow({id : grades.grade.student.id})">{{ grades.grade.student.first_name }} {{ grades.grade.student.last_name }}</h1>
+<h2>Grade - Week {{ grades.grade.week }}</h2>
+<p>--------------------------------------</p>
+<h3>Individual feedback</h3>
+<ul class="grade-marks-list">
+  <li class="grade-marks-li" ng-repeat="mark in grades.grade.marks">
+    <div class="mark-box">
+      <h3>{{ mark.instructor.first_name }}</h3>
+      <p>Class Achivement : {{mark.classwork_achievement}}</p>
+      <p>Class Effort     : {{mark.classwork_effort}}</p>
+      <p>Home Achivement  : {{mark.homework_achievement}}</p>
+      <p>Home Effort      : {{mark.homework_effort}}</p>
+      <p>{{mark.comment}}</p>
+    </div>
+  </li>
+</ul>

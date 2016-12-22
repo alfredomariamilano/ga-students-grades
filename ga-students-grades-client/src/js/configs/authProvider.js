@@ -1,14 +1,18 @@
-(function() {
-  'use strict';
+// (function() {
+//   'use strict';
+//
 
-  authProvider.$inject = ['$authProvider'];
-  function authProvider($authProvider) {
-    $authProvider.configure({
-      apiUrl: 'http://localhost:3000',
-      storage: 'localStorage'
-    });
-  }
+angular
+  .module('gaGradesApp')
+  .config(authProvider);
 
-  return this.config(authProvider);
-
-}).call(app);
+authProvider.$inject = ['$authProvider'];
+function authProvider($authProvider) {
+  $authProvider.configure({
+    apiUrl: 'http://localhost:3000'
+  });
+}
+//
+//   return this.config(authProvider);
+//
+// }).call(app);

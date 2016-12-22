@@ -1,9 +1,16 @@
-(function() {
-  'use strict';
+// (function() {
+//   'use strict';
+//
 
-  UsersIndexCtrl.$inject = [];
-  function UsersIndexCtrl(){
-  }
+angular
+  .module('gaGradesApp')
+  .controller('UsersIndexCtrl', UsersIndexCtrl);
 
-  return this.controller('UsersIndexCtrl', UsersIndexCtrl);
-}).call(app);
+UsersIndexCtrl.$inject = [];
+function UsersIndexCtrl(){
+}
+
+
+//
+//   return this.controller('UsersIndexCtrl', UsersIndexCtrl);
+// }).call(app);

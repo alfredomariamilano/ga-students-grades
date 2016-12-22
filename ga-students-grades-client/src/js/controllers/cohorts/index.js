@@ -1,20 +1,26 @@
-(function() {
-  'use strict';
+// (function() {
+//   'use strict';
+//
 
-  CohortsIndexCtrl.$inject = ['$http'];
-  function CohortsIndexCtrl($http){
-    const vm = this;
+angular
+.module('gaGradesApp')
+.controller('CohortsIndexCtrl', CohortsIndexCtrl);
 
-    $http
-      .get('http://localhost:3000/cohorts')
-      .then(data => {
-        console.log('Success:', data);
-        vm.cohorts = data.data;
-      }, data => {
-        console.log('Failure:', data);
-      });
 
-  }
+CohortsIndexCtrl.$inject = ['$http'];
+function CohortsIndexCtrl($http){
+  const vm = this;
 
-  return this.controller('CohortsIndexCtrl', CohortsIndexCtrl);
-}).call(app);
+  $http
+  .get('http://localhost:3000/cohorts')
+  .then(data => {
+    console.log('Success:', data);
+    vm.cohorts = data.data;
+  }, data => {
+    console.log('Failure:', data);
+  });
+
+}
+//
+//   return this.controller('CohortsIndexCtrl', CohortsIndexCtrl);
+// }).call(app);
