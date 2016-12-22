@@ -14,4 +14,6 @@ m2 = Mark.create!(user_id: 3, grade_id: 1, classwork_effort: 5, classwork_achiev
 m3 = Mark.create!(user_id: 4, grade_id: 1, classwork_effort: 2, classwork_achievement: 'A', homework_effort: 3, homework_achievement: 'E', comment: 'Utterly terrible - NOOOOOOOOO!')
 
 c1.users << i1
+c1.users << i2
+c1.users << i3
 c1.users << s1

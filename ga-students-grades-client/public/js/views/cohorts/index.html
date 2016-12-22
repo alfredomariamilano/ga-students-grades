@@ -1,0 +1,9 @@
+<h1>Cohorts</h1>
+<ul>
+  <li ng-repeat="cohort in cohorts.cohorts">
+    <p>{{ cohort.name }}</p>
+    <ul>Instructors
+      <li ng-repeat="instructor in cohort.instructors">{{ instructor.first_name }} {{ instructor.last_name }}</li>
+    </ul>
+  </li>
+</ul>
