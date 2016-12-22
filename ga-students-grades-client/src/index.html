@@ -8,6 +8,10 @@
   <script src="/js/app.js" charset="utf-8"></script>
 </head>
 <body ng-controller="MainCtrl as main">
-  <h1 ng-click="main.fuck()">bloop</h1>
+  <nav>
+    <!-- <li ng-click="main.login()">Login</li> -->
+    <a ui-sref="cohortsIndex">Cohorts</a>
+  </nav>
+  <main ui-view></main>
 </body>
 </html>

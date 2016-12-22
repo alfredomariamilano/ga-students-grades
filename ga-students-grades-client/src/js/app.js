@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 angular
 .module('gaGradesApp', [
+=======
+const dependencies = [
+>>>>>>> 8e9f87bd69d355b28fbef7cb43aca82c19f25a23
   'ui.router',
   'ngResource',
   'angular-jwt',
   'ng-token-auth'
+<<<<<<< HEAD
 ])
 .config(function($authProvider) {
   $authProvider.configure({
@@ -84,3 +89,10 @@ function MainCtrl($auth, $rootScope) {
 // }).done(data => {
 //   console.log(data);
 // });
+=======
+];
+console.log('LOADED');
+angular.module('gaGradesApp', dependencies);
+
+console.log('hello something 2');
+>>>>>>> 8e9f87bd69d355b28fbef7cb43aca82c19f25a23

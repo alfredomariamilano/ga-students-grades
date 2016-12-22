@@ -1,1 +1,35 @@
+<<<<<<< HEAD
 body{background:red}
+=======
+body {
+  background: #f5f5f5;
+  font-family: 'Helvetica Neue', cursive; }
+
+.student-grade-list {
+  padding: 0; }
+  .student-grade-list .student-grade-li {
+    margin: 10px;
+    list-style-type: none;
+    display: inline-block; }
+    .student-grade-list .student-grade-li .grade-box {
+      width: 300px;
+      border: 1px solid black;
+      padding: 10px; }
+      .student-grade-list .student-grade-li .grade-box:hover {
+        cursor: pointer; }
+
+.grade-marks-list {
+  padding: 0; }
+  .grade-marks-list .grade-marks-li {
+    margin: 10px;
+    list-style-type: none;
+    display: inline-block; }
+    .grade-marks-list .grade-marks-li .mark-box {
+      width: 300px;
+      border: 1px solid black;
+      padding: 10px; }
+      .grade-marks-list .grade-marks-li .mark-box:hover {
+        cursor: pointer; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzdHlsZS5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIGJhY2tncm91bmQ6ICNmNWY1ZjU7XG4gIGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhIE5ldWUnLCBjdXJzaXZlOyB9XG5cbi5zdHVkZW50LWdyYWRlLWxpc3Qge1xuICBwYWRkaW5nOiAwOyB9XG4gIC5zdHVkZW50LWdyYWRlLWxpc3QgLnN0dWRlbnQtZ3JhZGUtbGkge1xuICAgIG1hcmdpbjogMTBweDtcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrOyB9XG4gICAgLnN0dWRlbnQtZ3JhZGUtbGlzdCAuc3R1ZGVudC1ncmFkZS1saSAuZ3JhZGUtYm94IHtcbiAgICAgIHdpZHRoOiAzMDBweDtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xuICAgICAgcGFkZGluZzogMTBweDsgfVxuICAgICAgLnN0dWRlbnQtZ3JhZGUtbGlzdCAuc3R1ZGVudC1ncmFkZS1saSAuZ3JhZGUtYm94OmhvdmVyIHtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyOyB9XG5cbi5ncmFkZS1tYXJrcy1saXN0IHtcbiAgcGFkZGluZzogMDsgfVxuICAuZ3JhZGUtbWFya3MtbGlzdCAuZ3JhZGUtbWFya3MtbGkge1xuICAgIG1hcmdpbjogMTBweDtcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrOyB9XG4gICAgLmdyYWRlLW1hcmtzLWxpc3QgLmdyYWRlLW1hcmtzLWxpIC5tYXJrLWJveCB7XG4gICAgICB3aWR0aDogMzAwcHg7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcbiAgICAgIHBhZGRpbmc6IDEwcHg7IH1cbiAgICAgIC5ncmFkZS1tYXJrcy1saXN0IC5ncmFkZS1tYXJrcy1saSAubWFyay1ib3g6aG92ZXIge1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7IH1cbiJdLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+>>>>>>> 8e9f87bd69d355b28fbef7cb43aca82c19f25a23

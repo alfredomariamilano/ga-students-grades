@@ -1,0 +1,15 @@
+<h1>{{ users.user.first_name }} {{ users.user.last_name }}</h1>
+<h3>Cohort: {{users.user.cohorts[0].name}}</h3>
+<p>--------------------------------------</p>
+<h3>Grades</h3>
+<ul class="student-grade-list">
+  <li class="student-grade-li" ng-repeat="grade in users.user.grades">
+    <div ui-sref="gradesShow({id : grade.id})" class="grade-box">
+      <h3>Week {{ grade.week }}</h3>
+      <p>Overall Class Achivement : {{grade.av_class_achievement}}</p>
+      <p>Overall Class Effort     : {{grade.av_class_effort}}</p>
+      <p>Overall Home Achivement  : {{grade.av_home_achievement}}</p>
+      <p>Overall Home Effort      : {{grade.av_home_effort}}</p>
+    </div>
+  </li>
+</ul>

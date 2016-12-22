@@ -1,9 +1,9 @@
 class UserSerializer < ActiveModel::Serializer
   attributes :id, :first_name, :last_name, :role
   has_many :cohorts
-  attribute :marks, if: :is_instructor?
-  attribute :grades, if: :is_student?
-  # has_many :grades
+  # attribute :marks, if: :is_instructor?
+  # attribute :grades, if: :is_student?
+  has_many :grades
   # has_many :marks
 
   def is_instructor?

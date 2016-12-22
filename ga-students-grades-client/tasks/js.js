@@ -11,6 +11,8 @@ const uglify           = require('gulp-uglify');
 const rename           = require('gulp-rename');
 const browserSync      = require('browser-sync');
 const config           = require('../package').gulp;
+// const angularFilesort  = require('gulp-angular-filesort');
+var streamqueue = require('streamqueue');
 
 const fetchVendorJs = () => {
   return gulp.src(bowerFiles(config.selectors.js))
@@ -35,7 +37,11 @@ const buildJs = () => {
   const vendorJs = fetchVendorJs();
   const localJs  = fetchLocalJs();
 
-  return eventStream.merge(vendorJs, localJs)
+  // return eventStream.merge(vendorJs, localJs)
+  return streamqueue({ objectMode: true },
+    fetchVendorJs(),
+    fetchLocalJs()
+  )
     .pipe(concat(config.output.js))
     .pipe(sourcemaps.init())
     .pipe(gulpIf(global.production, uglify()))
