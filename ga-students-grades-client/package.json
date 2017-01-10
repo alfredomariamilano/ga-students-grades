@@ -42,6 +42,7 @@
     "selectors": {
       "all": "*",
       "js": "**/*.js",
+      "localJs": "**/app.js",
       "css": "**/*.css",
       "scss": "**/*.scss",
       "html": "**/*.html",
