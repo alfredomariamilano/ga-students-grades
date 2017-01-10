@@ -1,6 +1,8 @@
 <h1 ui-sref="usersShow({id : grades.grade.student.id})">{{ grades.grade.student.first_name }} {{ grades.grade.student.last_name }}</h1>
 <h2>Grade - Week {{ grades.grade.week }}</h2>
 <p>--------------------------------------</p>
+<button ui-sref="marksNew({id: grades.grade.id})" class="submitButton" ng-if="grades.canSubmit()">Button</button>
+<p class="submitMessage" ng-if="!grades.canSubmit()">You have already submitted this student's mark for the week</p>
 <h3>Individual feedback</h3>
 <ul class="grade-marks-list">
   <li class="grade-marks-li" ng-repeat="mark in grades.grade.marks">

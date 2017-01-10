@@ -1,0 +1,50 @@
+<h1>New mark for {{marks.grade.student.first_name}} {{marks.grade.student.last_name}}</h1>
+<h2 class="weekNum">Week {{marks.grade.week}}</h2>
+<h1 class="heading">Add a lot</h1>
+<form class="newMark" ng-submit="marks.submit()">
+  <div class="form-group">
+    <label>Classwork Achievement</label>
+    <select name="classwork-effort" ng-model="marks.mark.classwork_achievement">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Classwork Effort</label>
+    <select name="classwork-effort" ng-model="marks.mark.classwork_effort">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Homework Achievement</label>
+    <select name="homework-effort" ng-model="marks.mark.homework_achievement">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Homework Effort</label>
+    <select name="homework-effort" ng-model="marks.mark.homework_effort">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Comment</label>
+    <textarea ng-model="marks.mark.comment"></textarea>
+  </div>
+  <button>Submit</button>
+</form>

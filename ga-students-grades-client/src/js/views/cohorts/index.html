@@ -1,19 +1,8 @@
 <h1>Cohorts</h1>
-<ul>
+<ul class="cohortsList">
   <li ng-repeat="cohort in cohorts.cohorts">
-    <p>{{ cohort.name }}</p>
-    <h3>Instructors</h3>
-    <ul>
-      <li ng-repeat="instructor in cohort.instructors">
-        <p>{{ instructor.first_name }} {{ instructor.last_name }}</p>
-      </li>
-    </ul>
-    <p>-------------</p>
-    <h3>Students</h3>
-    <ul>
-      <li ng-repeat="student in cohort.students">
-        <p ui-sref="usersShow({id : student.id})">{{ student.first_name }} {{ student.last_name }}</p>
-      </li>
-    </ul>
+    <div  ui-sref="cohortsShow({id : cohort.id})" class="cohortName">
+      <p>{{ cohort.name }}</p>
+    </div>
   </li>
 </ul>
