@@ -16,8 +16,6 @@ class MarksController < ApplicationController
 
   # POST /marks
   def create
-    current_user = {}
-    current_user.id = 1
     @mark = Mark.new(mark_params)
     @mark.user_id = current_user.id
     if @mark.save

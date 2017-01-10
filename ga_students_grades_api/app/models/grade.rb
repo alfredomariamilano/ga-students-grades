@@ -4,11 +4,15 @@ class Grade < ApplicationRecord
   has_many :marks
 
   def av_class_effort
-    marks.average(:classwork_effort).round
+    if marks
+      marks.average(:classwork_effort).round
+    end
   end
 
   def av_home_effort
-    marks.average(:homework_effort).round
+    if marks
+      marks.average(:homework_effort).round
+    end
   end
 
   def av_class_achievement

@@ -26,10 +26,20 @@ function Router($stateProvider, $urlRouterProvider, $locationProvider){
     templateUrl: '/js/views/cohorts/index.html',
     controller: 'CohortsIndexCtrl as cohorts'
   })
+  .state('cohortsShow', {
+    url: '/cohorts/:id',
+    templateUrl: '/js/views/cohorts/show.html',
+    controller: 'CohortsShowCtrl as cohorts'
+  })
   .state('gradesShow', {
     url: '/grades/:id',
     templateUrl: '/js/views/grades/show.html',
     controller: 'GradesShowCtrl as grades'
+  })
+  .state('marksNew', {
+    url: '/grades/:id/new-mark',
+    templateUrl: '/js/views/marks/new.html',
+    controller: 'MarksNewCtrl as marks'
   });
 
   $urlRouterProvider.otherwise('/');
